@@ -13,3 +13,4 @@ def generate_password(length=16):
     random_characters = map(chr,[randint(33,127) for i in range(length+1)])
     return ''.join(random_characters)
 
+print generate_password()
