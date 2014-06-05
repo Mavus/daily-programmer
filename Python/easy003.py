@@ -20,3 +20,17 @@ def encrypt(plaintext):
 
 def decrypt(ciphertext):
     return ''.join([caesar(c,3) for c in ciphertext])
+
+def start():
+    option = raw_input("[e]ncrypt, [d]ecrypt or e[x]it: ")
+    if option == 'e':
+        print encrypt(raw_input("Enter plaintext: ")
+    elif option == 'd':
+        print decrypt(raw_input("Enter ciphertext: ")
+    elif option == 'x':
+        exit(0)
+    else:
+        print "Invalid input"
+
+while True:
+    start()
