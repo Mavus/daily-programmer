@@ -25,4 +25,8 @@ def pi(precision):
     getcontext().prec -= 2
     return +s
 
+def pi_one_line(): # As a bonus
+    print reduce(lambda x,k:2+k/2*x/k,range(999,1,-2),Decimal())
+
 print "Our approximation of pi:", pi(30) # Should evel to 3.14159265358979323846264338328
+
